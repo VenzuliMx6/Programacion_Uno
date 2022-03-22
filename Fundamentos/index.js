@@ -22,7 +22,7 @@ if (x == 44) {
     console.log(x) //Acá se imprime el 74
 }
 console.log(x) //Y acá también se imprime el 74
-
+//KASJHASKJFHASKJFHASKJFH
 //Uso de LET
 let y = 11;
 if (y == 11) {
