@@ -2,9 +2,11 @@
 function mostrar() {
   
   /* Forma 1 */
-  const nombres = document.querySelector("#inp_nombre").value
+  let nombres = document.querySelector("#inp_nombre").value
   
-  
+  /* Sin template string */
+  nombres = 'nombre y apellido: '+nombres
+
 
   //Siempre que sea solamente texto usar ''
   alert(nombres);
