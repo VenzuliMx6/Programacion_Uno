@@ -20,6 +20,7 @@ export default class Cliente {
       localStorage.setItem("listado_clientes", JSON.stringify(lista_clientes));
 
       this.obtener_cliente();
+      this.vaciar_formulario()
     } else {
       let lista_clientes = [];
       lista_clientes.push(nuevo_cliente);
@@ -62,7 +63,7 @@ export default class Cliente {
   }
   actualizar_cliente(index) {
 
-    let listado_clientes = JSON.parse(localStorage-getItem("listado_clientes"))
+    let listado_clientes = JSON.parse(localStorage.getItem("listado_clientes"))
 
     listado_clientes[index].nombre = document.getElementById("inp_nombre").value
 
@@ -73,7 +74,18 @@ export default class Cliente {
     localStorage.setItem("listado_clientes", JSON.stringify(listado_clientes))
   
     /* Volvemos a reconstruir la tabla */
-    this.obtener_cliente
+    this.obtener_cliente()
+    this.vaciar_formulario()
+
+    document.getElementById("btn_guardar").style.display = "block"
+    document.getElementById("btn_actualizar").style.display = "none"
+
+  }
+
+  vaciar_formulario()
+  {
+    document.getElementById("form_cliente").reset()
+
 
   }
 }

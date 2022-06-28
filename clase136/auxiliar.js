@@ -11,5 +11,9 @@ function editar(index) {
 
   document.getElementById("inp_dni").value = listado_clientes[index].dni;
 
+  //Guardamos en el storage el indice del cliente que queremos editar (actualizar)
   localStorage.setItem("indice_update", index);
+
+  document.getElementById("btn_actualizar").style.display = "block"
+  document.getElementById("btn_guardar").style.display = "none"
 }
