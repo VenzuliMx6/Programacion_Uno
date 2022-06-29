@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP 3</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand">Carga de producto</a>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Buscar un producto"
+            aria-label="Buscar"
+          />
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-lg-4">
+          <!-- Descripción del producto -->
+          <input
+            class="form-control mb-3"
+            placeholder="Descripción del producto"
+            type="text"
+            id="nombre_producto"
+          />
+            <!-- Precio del producto -->
+          <input
+            class="form-control mb-3"
+            placeholder="Precio del producto"
+            type="number"
+            id="precio_producto"
+          />
+            <!-- URL del producto, o sea, la imagen -->
+          <input
+            class="form-control mb-3"
+            placeholder="URL del producto"
+            type="url"
+            id="url_producto"
+          />
+            
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="inputGroupSelect01"
+              >Tipo de producto</label
+            >
+            <!-- DESPUÉS CREAR UN ID PARA CADA OPCIÓN Y VER CÓMO HACERLO FUNCAR -->
+            <select class="form-select" id="id_tipo_producto">
+              <option selected>Elija una opción</option>
+              <option id="id_cpu" value="1">Procesadores</option>
+              <option id="id_ram" value="2">Memorias Ram</option>
+              <option id="id_disk" value="3">Discos de almacenamiento</option>
+              <option id="id_power" value="4">Fuente de alimentación</option>
+            </select>
+          </div>
+
+          <button class="btn btn-success">Cargar producto</button>
+        </div>
+
+        <div class="col-lg-8">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>N°</th>
+                        <th>Imagen</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+            </table>
+            <!-- Fin del col-lg-6 de la tabla -->
+        </div>
+      </div>
+    </div>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
