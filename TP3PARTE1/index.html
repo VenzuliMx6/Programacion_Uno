@@ -31,53 +31,47 @@
             class="form-control mb-3"
             placeholder="Descripción del producto"
             type="text"
-            id="nombre_producto"
+            id="descripcion_producto"
           />
-            <!-- Precio del producto -->
+          <!-- Precio del producto -->
           <input
             class="form-control mb-3"
             placeholder="Precio del producto"
             type="number"
             id="precio_producto"
           />
-            <!-- URL del producto, o sea, la imagen -->
+          <!-- URL del producto, o sea, la imagen -->
           <input
             class="form-control mb-3"
             placeholder="URL del producto"
             type="url"
             id="url_producto"
           />
-            
-          <div class="input-group mb-3">
-            <label class="input-group-text" for="inputGroupSelect01"
-              >Tipo de producto</label
-            >
-            <!-- DESPUÉS CREAR UN ID PARA CADA OPCIÓN Y VER CÓMO HACERLO FUNCAR -->
-            <select class="form-select" id="id_tipo_producto">
-              <option selected>Elija una opción</option>
-              <option id="id_cpu" value="1">Procesadores</option>
-              <option id="id_ram" value="2">Memorias Ram</option>
-              <option id="id_disk" value="3">Discos de almacenamiento</option>
-              <option id="id_power" value="4">Fuente de alimentación</option>
-            </select>
-          </div>
+
+          <input
+            class="form-control mb-3"
+            placeholder="Tipo de producto"
+            type="text"
+            id="tipo_producto"
+          />
 
           <button class="btn btn-success">Cargar producto</button>
         </div>
 
         <div class="col-lg-8">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>N°</th>
-                        <th>Imagen</th>
-                        <th>Descripción</th>
-                        <th>Precio</th>
-                        <th>Acciones</th>
-                    </tr>
-                </thead>
-            </table>
-            <!-- Fin del col-lg-6 de la tabla -->
+          <table class="table">
+            <thead>
+              <tr>
+                <th>N°</th>
+                <th>Imagen</th>
+                <th>Descripción</th>
+                <th>Precio</th>
+                <th>Categoría</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+          </table>
+          <!-- Fin del col-lg-6 de la tabla -->
         </div>
       </div>
     </div>
